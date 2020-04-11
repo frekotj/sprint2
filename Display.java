@@ -9,7 +9,7 @@ public class Display extends JFrame {
     int Y_POS = (HEIGHT / 2) - 50;
 
     public Display(){
-        super("Rectangle");
+        super("Rectangle 100 x 100");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(WIDTH,HEIGHT);
         setVisible(true);
@@ -24,3 +24,5 @@ public class Display extends JFrame {
         Display display = new Display();
     }
 }
+
+
