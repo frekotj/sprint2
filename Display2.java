@@ -1,15 +1,15 @@
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
-class Display2 extends JFrame {
+public class Display2 extends JFrame {
 
-    int WIDTH = 500;
-    int HEIGHT = 500;
-    int X_POS = (WIDTH / 2) - 100;
-    int Y_POS = (HEIGHT / 2) - 100;
+    int WIDTH = 1320;
+    int HEIGHT = 1320;
+    int X_POS = (WIDTH / 2) - 50;
+    int Y_POS = (HEIGHT / 2) - 150;
 
     public Display2() {
-        super("Rectangle 200 x 200");
+        super("Rectangle");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(WIDTH, HEIGHT);
         setVisible(true);
@@ -17,7 +17,7 @@ class Display2 extends JFrame {
 
     public void paint(Graphics g) {
         super.paint(g);
-        g.drawRect(X_POS, Y_POS, 200, 200);
+        g.drawRect(X_POS, Y_POS, 150, 150);
         g.setColor(Color.BLUE);
     }
 
@@ -25,4 +25,3 @@ class Display2 extends JFrame {
         Display2 display = new Display2();
     }
 }
-
